@@ -18,6 +18,7 @@ import { UPDATE_WEBSITES, WEBSITES } from "@/utils/permission";
 import { usePermissionQuery } from "@/utils/IPChecker";
 import { Link as LinkReact } from "react-router-dom";
 import { useNewWebsite } from "@/features/websites/hooks/use-new-webites";
+import { useSidebar } from "@/components/ui/sidebar";
 
 export function AppSidebar() {
   const { id } = useParams();
@@ -25,7 +26,8 @@ export function AppSidebar() {
   const { onOpen: updateOpen } = useUpdateWebsite();
   const { onOpen: creteOpen } = useNewWebsite();
   const { data, isLoading } = useGetWebsites();
-//   console.log("data dharam: ", data);
+  const { isMobile, setOpenMobile } = useSidebar();
+  //   console.log("data dharam: ", data);
 
   const { data: permission } = usePermissionQuery();
 
@@ -54,7 +56,6 @@ export function AppSidebar() {
           )}
 
           <SidebarGroupContent>
-            
             <SidebarMenu>
               {isLoading &&
                 Array.from({ length: 10 }, (_, i) => i + 1).map(() => {
@@ -80,6 +81,7 @@ export function AppSidebar() {
                           <Link
                             to={item.id}
                             className="flex items-center gap-5  w-full"
+                            onClick={() => isMobile && setOpenMobile(false)}
                           >
                             <div className="text-[16px]">
                               {

@@ -36,7 +36,7 @@ export const columns: ColumnDef<Website>[] = [
       return (
         <div
           onClick={handleCopy}
-          className="flex justify-center items-center w-full h-full py-2 cursor-pointer hover:underline"
+          className="flex md:justify-center items-center w-full h-full py-2 cursor-pointer hover:underline"
           title="Click to copy"
         >
           <span className="text-gray-800 font-medium text-sm">{site}</span>
