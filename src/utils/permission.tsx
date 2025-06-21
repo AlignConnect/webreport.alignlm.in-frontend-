@@ -1,0 +1,73 @@
+export const OVERVIEW = "OVERVIEW";
+
+export const WEBSITES = "WEBSITES";
+export const CREATE_WEBSITES = "CREATE_WEBSITES";
+export const UPDATE_WEBSITES = "UPDATE_WEBSITES";
+export const DELETE_WEBSITES = "DELETE_WEBSITES";
+
+
+export const CLOUDE_IMAGE = "CLOUDE_IMAGE";
+export const CREATE_CLOUDE_IMAGE = "CREATE_CLOUDE_IMAGE";
+export const DELETE_CLOUDE_IMAGE = "DELETE_CLOUDE_IMAGE";
+export const CLOUDE_CACHE = "CLOUDE_CACHE";
+export const CREATE_CLOUDE_CACHE = "CREATE_CLOUDE_CACHE";
+export const UPDATE_CLOUDE_CACHE = "UPDATE_CLOUDE_CACHE";
+export const DELETE_CLOUDE_CACHE = "DELETE_CLOUDE_CACHE";
+
+
+export const SHOPIFY = "SHOPIFY";
+export const CREATE_SHOPIFY = "CREATE_SHOPIFY";
+export const UPDATE_SHOPIFY = "UPDATE_SHOPIFY";
+export const DELETE_SHOPIFY = "DELETE_SHOPIFY";
+
+
+export const ARREPORT = "AR-REPORT";
+
+
+export const EXO_TS = "EXO_TS";
+export const CREATE_EXO_TS = "CREATE_EXO_TS";
+export const UPDATE_EXO_TS = "UPDATE_EXO_TS";
+export const DELETE_EXO_TS = "DELETE_EXO_TS";
+
+
+export const LINKS = "LINKS";
+export const CREATE_LINKS = "CREATE_LINKS";
+export const UPDATE_LINKS = "UPDATE_LINKS";
+export const DELETE_LINKS = "DELETE_LINKS";
+
+
+export const SETTINGS = "SETTINGS";
+
+export const permission = [
+
+
+    "WEBSITES",
+    "CREATE_WEBSITES",
+    "UPDATE_WEBSITES",
+    "DELETE_WEBSITES",
+
+    "CLOUDE_IMAGE",
+    "CREATE_CLOUDE_IMAGE",
+    "DELETE_CLOUDE_IMAGE",
+
+    "CLOUDE_CACHE",
+    "CREATE_CLOUDE_CACHE",
+    "UPDATE_CLOUDE_CACHE",
+    "DELETE_CLOUDE_CACHE",
+
+    "AR-REPORT",
+
+    "SHOPIFY",
+    "CREATE_SHOPIFY",
+    "UPDATE_SHOPIFY",
+    "DELETE_SHOPIFY",
+
+    "EXO_TS",
+    "CREATE_EXO_TS",
+    "UPDATE_EXO_TS",
+    "DELETE_EXO_TS",
+
+    "SETTINGS"
+
+
+]
