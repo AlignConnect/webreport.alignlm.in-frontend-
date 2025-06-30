@@ -1,7 +1,12 @@
 import { Button } from "@/components/ui/button"
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover"
 
-const ViewProduct = ({ data }: { data: Record<string, any>[] }) => {
+interface Product {
+    product: string;
+    count: number;
+}
+
+const ViewProduct = ({ data }: { data: Product[] }) => {
 
     console.log(data)
 

@@ -23,12 +23,12 @@ const Header = () => {
           </div>
 
           {/* Navigation center on desktop */}
-          <div className="hidden lg:flex justify-center lg:w-1/3">
+          <div className="hidden lg:flex justify-center lg:w-1/2">
             <Navigation />
           </div>
 
           {/* Right section - user button or menu toggle */}
-          <div className="flex items-center justify-end lg:w-1/3">
+          <div className="flex items-center justify-end lg:w-1/2">
             {/* Mobile Menu Button */}
             <button
               className="lg:hidden text-white"
